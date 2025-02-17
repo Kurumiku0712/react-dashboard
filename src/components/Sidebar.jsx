@@ -39,7 +39,7 @@ const navItems = [
     icon: <HomeOutlined />,
   },
   {
-    text: "Client Facing",
+    text: "Admin Management",
     icon: null,
   },
   {
@@ -132,7 +132,7 @@ const Sidebar = ({
               <FlexBetween color={theme.palette.secondary.main}>
                 <Box display="flex" alignItems="center" gap="0.5rem">
                   <Typography variant="h4" fontWeight="bold">
-                    ECOMVISION
+                    InflaMed
                   </Typography>
                 </Box>
                 {!isNonMobile && (
