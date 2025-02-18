@@ -7,6 +7,10 @@ export default defineConfig({
   define: {
     "process.env": {} 
   },
+  base: "/", 
+  build: {
+    outDir: "dist", 
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"), // `@` represents `src/`
