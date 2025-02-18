@@ -31,10 +31,10 @@ export const tokensDark = {
     // yellow
     50: "#f0f0f0", // manually adjusted
     100: "#fff6e0",
-    200: "#ffedc2",
+    200: "#665429", // manually adjusted
     300: "#ffe3a3",
     400: "#ffda85",
-    500: "#ffd166",
+    500: "#665429", // manually adjusted
     600: "#cca752",
     700: "#997d3d",
     800: "#665429",

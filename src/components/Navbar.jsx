@@ -3,11 +3,11 @@ import {
   LightModeOutlined,
   DarkModeOutlined,
   Menu as MenuIcon,
+  ChevronLeft,
   Search,
   SettingsOutlined,
   ArrowDropDownOutlined,
 } from "@mui/icons-material";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import FlexBetween from "@/components/FlexBetween";
 import { useDispatch } from "react-redux";
 import { setMode } from "@/state/index";
@@ -46,7 +46,7 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
         {/* LEFT SIDE */}
         <FlexBetween>
           <IconButton onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
-            {isSidebarOpen? <ChevronLeftIcon /> : <MenuIcon />} 
+            {isSidebarOpen? <ChevronLeft /> : <MenuIcon />} 
           </IconButton>
           <FlexBetween
             backgroundColor={theme.palette.background.alt}
