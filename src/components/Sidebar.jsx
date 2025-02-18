@@ -195,8 +195,8 @@ const Sidebar = ({
 
           <Box position="absolute" bottom="2rem">
             <Divider />
-            <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
-              <Box
+            <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0rem 1rem">
+              {/* <Box
                 component="img"
                 alt="profile"
                 src={profileImage}
@@ -204,15 +204,22 @@ const Sidebar = ({
                 width="40px"
                 borderRadius="50%"
                 sx={{ objectFit: "cover" }}
-              />
+              /> */}
               <Box textAlign="left">
                 <Typography
                   fontWeight="bold"
                   fontSize="0.9rem"
                   sx={{ color: theme.palette.secondary[100] }}
                 >
-                  Reconstructed Dashboard | Showcasing full-stack skills
+                  Reconstructed Dashboard | Showcasing full-stack skills 
                 </Typography>
+                <Typography
+                  fontSize="0.8rem"
+                  sx={{ color: theme.palette.secondary[100] }}
+                >
+                   (It may take a moment to wake up after inactivity)
+                </Typography>
+
                 {/* <Typography
                   fontWeight="bold"
                   fontSize="0.9rem"
