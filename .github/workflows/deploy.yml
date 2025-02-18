@@ -1,0 +1,28 @@
+name: Deploy Frontend to Render
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Lint & Tests
+        run: |
+          npm run lint
+          npm test
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Deploy to Render
+        run: curl -X POST ${{ secrets.RENDER_FRONTEND_HOOK }}
