@@ -35,6 +35,7 @@ Node.js & Express.js – RESTful API
 MongoDB & Mongoose – Database & data modeling
 
 ## Features
+
  Light & Dark Mode – Theme switching with Redux
  
  Dynamic Data Visualization – Interactive charts with Nivo
